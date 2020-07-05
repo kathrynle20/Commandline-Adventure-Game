@@ -29,7 +29,18 @@ def room3_text():
 def room4_text():
     print("Congratulations on making it to the final room! If you successfully escape this room you won!")
     print("Welcome to room 4! You have entered the Superhero world and are one of the Avengers.")
-    #a villian is chasing you
-    #have a chance to call an avenger to save him but there are 2 names to call
-    #one is the villian and one is the superhero but the names are disguised
-    #lastly have to choose a door one brings you to room 2 and one wins
+    print("A villian is chasing you and you need the help of another superhero")
+    print("You must first call one but you are given 2 code names, one that is the superhero and one that is the villian")
+    print("If you call successfully the superhero will fend the villain off but if you don't you will die")
+    print("After, if you had not died yet, you must pick between 2 doors, one that has an unpleasant surprise...")
+    print("and one that will finally lead you out of the mysterious adventure.")
+    print("GOOD LUCK!")
+
+def return_to_room2_text():
+    print("Sadly you have chosen the wrong door!")
+    print("Unfortunately you have returned to room 2! You must redo the tasks and find your way out of the game.")
+    print("If you wish to leave the game enter exit.")
+
+def win():
+    print("Congratulations!!! You've successful made it out of the Adventure Game!")
+    print("I hope you enjoyed this virtual experience! Come back next time!")
