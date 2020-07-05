@@ -1,5 +1,6 @@
-from play_game import play
-from text import exit
+from introduction import introduction
+from text import exit_game
+
 
 def lost():
     print("Sorry you lost the game!")
@@ -8,10 +9,10 @@ def lost():
     choose = True
     while choose:
         if if_play_again == "play":
-            play()
+            introduction()
             choose = False
         elif if_play_again == "exit":
-            exit()
+            exit_game()
             choose = False
         else:
             if_play_again = input("Please enter play or exit (all in lowercase letters)")

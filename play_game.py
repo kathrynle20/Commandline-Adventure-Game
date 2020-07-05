@@ -1,6 +1,6 @@
-from Welcome import welcome
+from introduction import introduction
 import random
-from lost import lost
+
 
 def play():
     ifPlay = input("Would you like to play the Adventure Game? Enter 1 for yes and 2 for no.")
@@ -9,7 +9,7 @@ def play():
     while choose:
         if ifPlay == "1":
             choose = False
-            welcome()
+            introduction()
         elif ifPlay == "2":
             choose = False
             print("Thank you for coming! Hope you can play next time.")

@@ -1,32 +1,33 @@
 from text import room4_text
-from text import exit
+from text import exit_game
 from text import win
 from text import return_to_room2_text
 from lost import lost
 from room2 import room2
 import random
 
+
 def room4():
     room4_text()
     room4_name = input("First, choose your superhero! You can type in your favorite superhero or make one up just for yourself!")
     print("Hello " + room4_name + " now you must choose a magic word")
-    room4_choice = ("Which magic word would you like to call: C924 or G420")
+    room4_choice = input("Which magic word would you like to call: C924 or G420")
     
     choose = True
     while choose:
-        superhero = random.randint(1,2)
+        superhero = random.randint(1, 2)
         if room4_choice == "C924":
             if superhero == 1:
                 print("Congrats! You have picked the correct code name. A Superhero came and save you!")
                 print("Now you are faced with 2 doors to exit to.")
                 choose_door()
             else:
-                print("Sorry you pickd the wrong code name! You were killed by a villian.")
+                print("Sorry you pickd the wrong code name! You were killed by a villain.")
                 lost()
             choose = False
         elif room4_choice == "G420":
             if superhero == 1:
-                print("Sorry you pickd the wrong code name! You were killed by a villian.")
+                print("Sorry you picked the wrong code name! You were killed by a villain.")
                 lost()
             else:
                 print("Congrats! You have picked the correct code name. A Superhero came and save you!")
@@ -35,13 +36,14 @@ def room4():
             choose = False
         elif room4_choice == "exit":
             choose = False
-            exit()
+            exit_game()
         else:
             room4_choice = input("Please enter C924 or G429")
             choose = True
 
+
 def choose_door():
-    win_door = random.randint(1,2)
+    win_door = random.randint(1, 2)
     
     choose = True
     while choose:
@@ -61,7 +63,7 @@ def choose_door():
                 room2()
             choose = False
         elif door_choice == "exit":
-            exit()
+            exit_game()
             choose = False
         else:
             choose = True
