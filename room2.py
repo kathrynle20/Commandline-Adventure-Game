@@ -8,7 +8,7 @@ def room2():
     text.room2_text()
     safe_key = random.randint(1, 2)
 
-    room2_choice = input("Please enter 1 or 2 to pick a key.")
+    room2_choice = input("Please enter 1 or 2 to pick a key: ")
 
     choose = True
     while choose:
@@ -32,5 +32,5 @@ def room2():
             text.exit_game()
             choose = False
         else:
-            room2_choice = input("Please enter 1 or 2 to pick a key.")
+            room2_choice = input("Please enter 1 or 2 to pick a key: ")
             choose = True

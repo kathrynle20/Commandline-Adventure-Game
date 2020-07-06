@@ -10,7 +10,7 @@ def room1():
     
     choose = True
     while choose:
-        room1_choice = input("Enter 1 or 2 to choose a book")
+        room1_choice = input("Enter 1 or 2 to choose a book: ")
         if room1_choice == "1":
             if safe_book == 1:
                 print("Congratulations, you found the key! You may use the key to move on to the second room.")
@@ -27,7 +27,7 @@ def room1():
                 print("Unfortunately you died because the books have fallen on you.")
                 lost.lost()
             choose = False
-        elif roosm1_choice == "exit":
+        elif room1_choice == "exit":
             text.exit_game()
             choose = False
         else:

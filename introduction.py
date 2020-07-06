@@ -11,7 +11,7 @@ def introduction():
     print("There might be tricks coming your way.... Watch out and good luck! Most importantly, have fun!")
     print("Your first room is the starting room")
 
-    welcome_room = input("You leave the first room and are faced with 2 rooms numbers 1 and 2. Enter 1 or 2:")
+    welcome_room = input("You leave the first room and are faced with 2 rooms numbers 1 and 2. Enter 1 or 2: ")
     
     choose = True
     while choose:
@@ -25,5 +25,5 @@ def introduction():
             text.exit_game()
             choose = False
         else:
-            welcome_room = input("Please enter 1 or 2")
+            welcome_room = input("Please enter 1 or 2: ")
             choose = True

@@ -6,7 +6,7 @@ import room4
 
 def room3():
     text.room3_text()
-    room3_choice = input("1 is Protego (shield) and 2 is Sectunsempra (attack). Please enter 1 or 2.")
+    room3_choice = input("1 is Protego (shield) and 2 is Sectunsempra (attack). Please enter 1 or 2: ")
 
     try_again = True
 
@@ -43,5 +43,5 @@ def room3():
             try_again = False
         
         else:
-            room3_choice = input("Please enter 1 or 2.")
+            room3_choice = input("Please enter 1 or 2: ")
             try_again = True

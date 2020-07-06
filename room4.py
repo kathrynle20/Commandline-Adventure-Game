@@ -6,9 +6,9 @@ import random
 
 def room4():
     text.room4_text()
-    room4_name = input("First, choose your superhero! You can type in your favorite superhero or make one up just for yourself!")
+    room4_name = input("First, choose your superhero! You can type in your favorite superhero or make one up just for yourself: ")
     print("Hello " + room4_name + " now you must choose a magic word")
-    room4_choice = input("Which magic word would you like to call: C924 or G420")
+    room4_choice = input("Which magic word would you like to call, C924 or G420: ")
     
     choose = True
     while choose:
@@ -35,7 +35,7 @@ def room4():
             choose = False
             text.exit_game()
         else:
-            room4_choice = input("Please enter C924 or G429")
+            room4_choice = input("Please enter C924 or G429: ")
             choose = True
 
 
@@ -44,7 +44,7 @@ def choose_door():
     
     choose = True
     while choose:
-        door_choice = input("Enter 1 or 2 to choose a door")
+        door_choice = input("Enter 1 or 2 to choose a door: ")
         if door_choice == "1":
             if win_door == 1:
                 text.win()

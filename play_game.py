@@ -3,7 +3,7 @@ import random
 
 
 def play():
-    ifPlay = input("Would you like to play the Adventure Game? Enter 1 for yes and 2 for no.")
+    ifPlay = input("Would you like to play the Adventure Game? Enter 1 for yes and 2 for no: ")
     
     choose = True
     while choose:
@@ -15,6 +15,6 @@ def play():
             print("Thank you for coming! Hope you can play next time.")
         else:
             choose = True
-            ifPlay = input("Please enter 1 to play and 2 to exit.")
+            ifPlay = input("Please enter 1 to play and 2 to exit: ")
 
 play()
