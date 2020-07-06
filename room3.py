@@ -1,12 +1,11 @@
-from text import room3_text
+import text
 import random
-from lost import lost
-from text import exit_game
-from room4 import room4
+import lost
+import room4
 
 
 def room3():
-    room3_text()
+    text.room3_text()
     room3_choice = input("1 is Protego (shield) and 2 is Sectunsempra (attack). Please enter 1 or 2.")
 
     try_again = True
@@ -26,21 +25,21 @@ def room3():
             else:
                 print("Congratulations! You blocked your opponent's attack and bought time to escape into the next room safely")
                 try_again = False
-                room4()
+                room4.room4()
         
         elif room3_choice == "2":
             if opponent_spell == "Protego":
                 print("Congratulations! You attacked your opponent when they chose to shield.")
                 print("You were able to escape safely to the next room!")
                 try_again = False
-                room4()
+                room4.room4()
             else:
                 print("OH NO! Both you and your opponent attacked each other! You both died.")
-                lost()
+                lost.lost()
                 try_again = False
         
         elif room3_choice == "exit":
-            exit_game()
+            text.exit_game()
             try_again = False
         
         else:

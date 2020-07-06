@@ -1,4 +1,4 @@
-from introduction import introduction
+import introduction
 import random
 
 
@@ -9,7 +9,7 @@ def play():
     while choose:
         if ifPlay == "1":
             choose = False
-            introduction()
+            introduction.introduction()
         elif ifPlay == "2":
             choose = False
             print("Thank you for coming! Hope you can play next time.")

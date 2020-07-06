@@ -1,6 +1,6 @@
-from text import exit_game
-from room1 import room1
-from room2 import room2
+import text
+import room1
+import room2
 
 
 def introduction():
@@ -16,13 +16,13 @@ def introduction():
     choose = True
     while choose:
         if welcome_room == "1":
-            room1()
+            room1.room1()
             choose = False
         elif welcome_room == "2":
-            room2()
+            room2.room2()
             choose = False
         elif welcome_room == "exit":
-            exit_game()
+            text.exit_game()
             choose = False
         else:
             welcome_room = input("Please enter 1 or 2")
